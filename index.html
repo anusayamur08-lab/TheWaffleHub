@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Colors */
+        :root {
+            --brown: #4b2e2e;
+            --gold: #d4af37;
+            --cream: #f8f5f0;
+            --green: #2e7d32;
+        }
+
+        /* Topbar */
+        .topbar {
+            background: var(--brown);
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: var(--cream);
+        }
+
+        .navbar-brand {
+            color: var(--brown);
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: var(--brown);
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: var(--gold);
+        }
+
+        /* Slider */
+        .carousel img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* Section */
+        .section {
+            padding: 60px 0;
+        }
+
+        /* Cards */
+        .card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--brown);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        WELCOME TO THE WAFFLE HUB
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+
+                <!-- Logo Image -->
+                <img src="images/logo.png" alt="Logo" height="80" class="me-2">
+
+                <!-- Text -->
+                THE WAFFLE HUB
+
+            </a> <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu1">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Owner">Owner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="7"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="8"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="9"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="10"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="11"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="12"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="13"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="14"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="15"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="16"></button>
+
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/Almond Chocolate Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/BlueBerry Cheese Cream Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Brown Chocolate Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Bubble Gum Crunchy Sndwich Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/ButterScotch White Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/White Chocolate Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Oreo Overload Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Nutella Chocolate Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Kitkat Waffle.jpg.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Triple Chocolate Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Strawberry Cream Cheese Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="images/IMG_9883.JPG.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/IMG_9874.JPG.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/IMG_9875.JPG.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/IMG_9880.JPG.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/IMG_9882.JPG.jpeg" class="d-block w-100" style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Choco Burst Candy Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/Brown Chocolate Single Triangle Waffle.jpg.jpeg" class="d-block w-100"
+                    style="height:500px; object-fit:cover;">
+            </div>
+
+
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- About -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 mt-4">
+
+                    <h2 class="fw-bold mb-3">About The Waffle Hub 🧇</h2>
+
+                    <p class="text-muted">
+                        Welcome to <strong>Waffle Hub</strong> – your ultimate destination for delicious and creative
+                        desserts!
+                        We specialize in a wide variety of waffles, from classic crispy delights to rich
+                        chocolate-loaded creations.
+                        Our menu also includes chocolate bowls, pancakes, and freshly baked cakes made with premium
+                        ingredients and love.
+                    </p>
+
+                    <p class="text-muted">
+                        Whether you're craving something sweet, celebrating a special moment, or just hanging out with
+                        friends,
+                        Waffle Hub offers a cozy atmosphere and unforgettable taste experience.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="row mt-4">
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-grid-3x3-gap-fill text-primary fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Variety of Waffles</h6>
+                                <small class="text-muted">Classic, chocolate, fruity & more</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-cup-hot-fill text-danger fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Chocolate Bowls</h6>
+                                <small class="text-muted">Rich & creamy indulgence</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-egg-fried text-warning fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Pancakes</h6>
+                                <small class="text-muted">Soft, fluffy & delicious</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-emoji-heart-eyes-fill text-danger fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Loved by Customers</h6>
+                                <small class="text-muted">Highly rated & trusted</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-shop text-primary fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Cozy Ambience</h6>
+                                <small class="text-muted">Perfect hangout spot</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 mt-4">
+                    <video class="img-fluid rounded" autoplay muted loop playsinline>
+                        <source src="images/lv_0_20260414001311.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu1" class="section">
+        <div class="container text-center">
+            <h2>Our Menu</h2>
+            <div class="row mt-4 gap-4">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Almond Chocolate Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Almond Chocolate Waffle</h5>
+                            <p>Crispy waffle topped with rich chocolate and crunchy almonds for a perfect sweet and
+                                nutty delight. 🍫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/BlueBerry Cheese Cream Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>BlueBerry Cheese Cream Waffle</h5>
+                            <p>Crispy waffle topped with creamy cheese and juicy blueberries for a perfect sweet-tangy
+                                bite. 🫐</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Brown Chocolate Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Brown Chocolate Waffle</h5>
+                            <p>Warm crispy waffle loaded with rich brown chocolate for a deep, indulgent cocoa
+                                delight. 🍫
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/White Chocolate Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>White Chocolate Waffle</h5>
+                            <p>Crispy waffle drizzled with creamy white chocolate for a smooth and sweet indulgent
+                                treat. 🤍🍫</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Triple Chocolate Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Triple Chocolate Waffle</h5>
+                            <p>Crispy waffle loaded with rich dark, milk, and white chocolate for an ultimate chocolate
+                                lover’s treat. 🍫✨</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Strawberry Cream Cheese Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Strawberry Cream Cheese Waffle</h5>
+                            <p>Warm waffle layered with creamy cheese and juicy strawberries for a rich and refreshing
+                                flavor combo. 🍓</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Oreo Overload Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Oreo Overload Waffle</h5>
+                            <p>Crispy waffle loaded with crushed Oreo cookies and rich chocolate for an extra crunchy,
+                                creamy treat. 🍪🍫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Nutella Chocolate Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Nutella Chocolate Waffle</h5>
+                            <p>Warm crispy waffle topped with rich Nutella chocolate for a smooth and irresistible
+                                treat. 🍫✨</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Kitkat Waffle.jpg.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Kitkat Waffle</h5>
+                            <p>Crispy waffle loaded with rich dark, milk, and white chocolate for an ultimate chocolate
+                                lover’s treat. 🍫✨</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/IMG_9883.JPG.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Dark Chocolate Bowl</h5>
+                            <p>Rich dark chocolate served in a smooth, indulgent bowl for a bold and intense cocoa
+                                experience. 🍫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/IMG_9875.JPG.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Oreo Overload Chocolate Bowl</h5>
+                            <p>Creamy chocolate bowl loaded with crunchy Oreo pieces for a rich and indulgent treat.
+                                🍪🍫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/IMG_9882.JPG.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Almond Chocolate Bowl</h5>
+                            <p>Smooth chocolate bowl topped with crunchy almonds for a rich and nutty delight. 🍫🌰 🍫
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/IMG_9880.JPG.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Pista Chocolate Bowl</h5>
+                            <p>Creamy chocolate bowl topped with crunchy pista for a rich and nutty delight. 💚🍫🍫</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/IMG_9874.JPG.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Kitkat Chocolate Bowl</h5>
+                            <p>Creamy chocolate bowl loaded with crunchy KitKat pieces for a crispy and indulgent treat.
+                                🍫</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner -->
+    <section class="section bg-light" id="Owner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+
+                    <h2 class="fw-bold mb-3">Meet Our Owner 👨‍🍳</h2>
+
+                    <p class="text-muted">
+                        <strong>Prakash Dhargude</strong>, the proud owner of <strong>Waffle Hub</strong>, is a
+                        passionate
+                        entrepreneur with a deep love for desserts and creativity. His vision was to create a place
+                        where
+                        people can enjoy unique, delicious, and high-quality waffles along with a variety of sweet
+                        treats.
+                    </p>
+
+                    <p class="text-muted">
+                        With dedication and hard work, he has built Waffle Hub into a favorite destination for waffle
+                        lovers.
+                        From selecting premium ingredients to ensuring the best customer experience, he personally
+                        focuses
+                        on every detail to maintain quality and taste.
+                    </p>
+
+                    <!-- Highlights -->
+                    <div class="row mt-4">
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-person-fill text-primary fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Owner</h6>
+                                <small class="text-muted">Prakash Dhargude</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-lightbulb-fill text-warning fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Visionary Leader</h6>
+                                <small class="text-muted">Creative & innovative ideas</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-award-fill text-success fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Quality Focus</h6>
+                                <small class="text-muted">Premium ingredients only</small>
+                            </div>
+                        </div>
+
+                        <div class="col-6 mb-3 d-flex">
+                            <i class="bi bi-emoji-smile-fill text-danger fs-4 me-2"></i>
+                            <div>
+                                <h6 class="mb-0">Customer First</h6>
+                                <small class="text-muted">Satisfaction is priority</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="images/dp-image.jpeg" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <div class="row mt-4">
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <i class="bi bi-telephone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <i class="bi bi-envelope"></i>
+                        <p>wafflehub@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <i class="bi bi-geo-alt"></i>
+                        <p>Bhari Vidyapith Back gate, Pune, India</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Form -->
+            <form class="mt-5">
+                <div class="row">
+                    <div class="col-md-6"><input class="form-control mb-3" placeholder="Name"></div>
+                    <div class="col-md-6"><input class="form-control mb-3" placeholder="Email"></div>
+                </div>
+                <textarea class="form-control mb-3" placeholder="Message"></textarea>
+                <button class="btn btn-dark">Send</button>
+            </form>
+
+            <!-- Map -->
+            <iframe class="mt-4"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.579410461581!2d73.85301919999999!3d18.457396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebe304d0307f%3A0xd48c4e49725ce11f!2sTHE%20WAFFLE%20HUB!5e0!3m2!1sen!2sin!4v1776340077291!5m2!1sen!2sin"
+                width="100%" height="300"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h5>The Waffle Hub</h5>
+                    <p class="text-light">Waffle Hub serves freshly made waffles, rich chocolates, and delightful
+                        desserts crafted with love to satisfy every sweet craving.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Timing</h5>
+                    <p>EveryDay <br>01 PM - 11 PM</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <a href="#about">About</a><br>
+                    <a href="#menu1">Menu</a><br>
+                    <a href="#Owner">Owner</a><br>
+                    <a href="#contact">Conatct</a>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Blog</h5>
+                    <p>Discover new waffle flavors, dessert ideas, and sweet trends from Waffle Hub.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
